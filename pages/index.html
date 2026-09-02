@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Three portfolio designs created for the SWE AI Portfolio Workshop.">
+    <title>SWE AI Portfolio Workshop | Portfolio Gallery</title>
+    <style>
+      :root { color: #30212c; background: #f7f1eb; font-family: Inter, Aptos, "Segoe UI", system-ui, sans-serif; }
+      * { box-sizing: border-box; }
+      body { min-width: 20rem; min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 2rem; background: radial-gradient(circle at 85% 15%, #ead0d6, transparent 24rem), #f7f1eb; }
+      main { width: min(100%, 70rem); }
+      p { color: #72666d; line-height: 1.7; }
+      h1 { max-width: 12ch; margin: 0; font: 600 clamp(3rem, 8vw, 6.5rem)/.95 Georgia, serif; letter-spacing: -.045em; }
+      .intro { max-width: 42rem; margin: 1.5rem 0 3rem; font-size: 1.1rem; }
+      ul { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; padding: 0; list-style: none; }
+      a { display: grid; min-height: 13rem; align-content: space-between; padding: 1.5rem; color: inherit; background: rgb(255 250 245 / 82%); border: 1px solid rgb(79 51 72 / 16%); box-shadow: 0 1rem 3rem rgb(70 42 57 / 8%); text-decoration: none; transition: transform 180ms ease, box-shadow 180ms ease; }
+      a:hover { transform: translateY(-4px); box-shadow: 0 1.4rem 3.5rem rgb(70 42 57 / 13%); }
+      a:focus-visible { outline: 3px solid #8c536e; outline-offset: 4px; }
+      strong { font: 600 1.55rem/1.15 Georgia, serif; }
+      span { color: #8f667d; font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+      @media (max-width: 48rem) { ul { grid-template-columns: 1fr; } a { min-height: 9rem; } }
+      @media (prefers-reduced-motion: reduce) { a { transition: none; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span>SWE AI Portfolio Workshop</span>
+      <h1>Three ways to tell an engineering story.</h1>
+      <p class="intro">Explore three portfolio directions built from the same professional profile.</p>
+      <ul>
+        <li><a href="./minimal-professional/"><span>Template 01</span><strong>Minimal Professional</strong></a></li>
+        <li><a href="./immersive-tech/"><span>Template 02</span><strong>Immersive Tech</strong></a></li>
+        <li><a href="./chibi-3d-story/"><span>Template 04</span><strong>Chibi 3D Story</strong></a></li>
+      </ul>
+    </main>
+  </body>
+</html>

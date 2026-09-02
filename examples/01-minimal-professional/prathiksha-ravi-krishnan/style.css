@@ -1,0 +1,17 @@
+/* Reuse the workshop template so this example always demonstrates Template 1. */
+@import url("../../../templates/01-minimal-professional/style.css");
+
+.project-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.education-list {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (max-width: 48rem) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}

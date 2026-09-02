@@ -1,0 +1,64 @@
+name: Deploy portfolio gallery
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: templates/04-chibi-3d-story/package-lock.json
+      - name: Build Chibi 3D Story
+        working-directory: templates/04-chibi-3d-story
+        run: npm ci && npm run build
+      - name: Assemble public sites
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _site/minimal-professional _site/immersive-tech _site/chibi-3d-story
+          cp pages/index.html _site/index.html
+          cp examples/01-minimal-professional/prathiksha-ravi-krishnan/index.html _site/minimal-professional/index.html
+          cp examples/01-minimal-professional/prathiksha-ravi-krishnan/style.css _site/minimal-professional/style.css
+          cp templates/01-minimal-professional/style.css _site/minimal-professional/base.css
+          cp templates/01-minimal-professional/script.js _site/minimal-professional/script.js
+          sed -i 's#../../../templates/01-minimal-professional/script.js#script.js#' _site/minimal-professional/index.html
+          sed -i 's#../../../templates/01-minimal-professional/style.css#base.css#' _site/minimal-professional/style.css
+          cp examples/02-immersive-tech/prathiksha-ravi-krishnan/index.html _site/immersive-tech/index.html
+          cp examples/02-immersive-tech/prathiksha-ravi-krishnan/style.css _site/immersive-tech/style.css
+          cp examples/02-immersive-tech/prathiksha-ravi-krishnan/script.js _site/immersive-tech/script.js
+          cp -R examples/02-immersive-tech/prathiksha-ravi-krishnan/assets _site/immersive-tech/assets
+          cp -R templates/04-chibi-3d-story/dist/. _site/chibi-3d-story/
+          touch _site/.nojekyll
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

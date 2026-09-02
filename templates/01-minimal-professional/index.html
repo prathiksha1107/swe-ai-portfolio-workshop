@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A professional engineering portfolio.">
+    <title>Your Name | Engineering Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- ANALYTICS: Microsoft Clarity tracking code can be added here -->
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="navigation container" aria-label="Main navigation">
+        <!-- CUSTOMIZE: NAME -->
+        <a class="logo" href="#top" aria-label="Your Name, home">YN</a>
+        <button
+          class="menu-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navigation-links"
+        >
+          <span class="menu-button__label">Menu</span>
+          <span class="menu-button__icon" aria-hidden="true"></span>
+        </button>
+        <ul class="navigation__links" id="navigation-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="container hero__content">
+          <p class="eyebrow">Hello, I’m</p>
+          <!-- CUSTOMIZE: NAME, PROFESSIONAL TITLE, AND TAGLINE -->
+          <h1 id="hero-title">Your Name</h1>
+          <p class="hero__title">Professional Title</p>
+          <p class="hero__statement">
+            Add a short statement about the engineering problems you solve and the
+            value you bring to a team.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container section-grid">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">A little about me</h2>
+          </div>
+          <!-- CUSTOMIZE: ABOUT -->
+          <div class="prose">
+            <p>
+              Add a concise introduction describing your background, engineering
+              interests, and the kinds of problems you enjoy working on.
+            </p>
+            <p>
+              Add a second short paragraph about your strengths, goals, or the impact
+              you hope to make.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tinted" id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Where I’ve contributed</h2>
+          <!-- CUSTOMIZE: EXPERIENCE -->
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-item__meta">
+                <p>Start Date–End Date</p>
+              </div>
+              <div>
+                <h3>Role Title</h3>
+                <p class="organization">Organization</p>
+                <ul>
+                  <li>Describe a responsibility, contribution, or problem you worked on.</li>
+                  <li>Describe what you personally did.</li>
+                  <li>Add a verified outcome when one is available.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__meta">
+                <p>Start Date–End Date</p>
+              </div>
+              <div>
+                <h3>Role Title</h3>
+                <p class="organization">Organization</p>
+                <ul>
+                  <li>Use internships, research, employment, volunteering, or leadership.</li>
+                  <li>Keep the description concise and factual.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <p class="eyebrow">Featured projects</p>
+          <h2 id="projects-title">Selected work</h2>
+          <p class="section-intro">
+            Use this section to explain how you approach meaningful technical work.
+          </p>
+          <!-- CUSTOMIZE: PROJECTS -->
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-card__number" aria-hidden="true">01</div>
+              <h3>Project Title</h3>
+              <p class="project-card__summary">Add a short, factual project summary.</p>
+              <dl class="project-details">
+                <div>
+                  <dt>Problem</dt>
+                  <dd>What needed to be solved?</dd>
+                </div>
+                <div>
+                  <dt>Approach</dt>
+                  <dd>What did you personally do?</dd>
+                </div>
+                <div>
+                  <dt>Impact</dt>
+                  <dd>What changed or what did you learn?</dd>
+                </div>
+              </dl>
+              <p class="project-card__label">Technologies</p>
+              <div class="technology-list" aria-label="Technologies used">
+                <span>Technology</span>
+                <span>Tool or method</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__number" aria-hidden="true">02</div>
+              <h3>Project Title</h3>
+              <p class="project-card__summary">Add a short, factual project summary.</p>
+              <dl class="project-details">
+                <div>
+                  <dt>Problem</dt>
+                  <dd>What needed to be solved?</dd>
+                </div>
+                <div>
+                  <dt>Approach</dt>
+                  <dd>What did you personally do?</dd>
+                </div>
+                <div>
+                  <dt>Impact</dt>
+                  <dd>What changed or what did you learn?</dd>
+                </div>
+              </dl>
+              <p class="project-card__label">Technologies</p>
+              <div class="technology-list" aria-label="Technologies used">
+                <span>Technology</span>
+                <span>Tool or method</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tinted" id="skills" aria-labelledby="skills-title">
+        <div class="container section-grid">
+          <div>
+            <p class="eyebrow">Skills</p>
+            <h2 id="skills-title">Tools I use</h2>
+          </div>
+          <!-- CUSTOMIZE: SKILLS -->
+          <div class="skill-groups">
+            <div>
+              <h3>Technical</h3>
+              <ul class="plain-list">
+                <li>Programming language</li>
+                <li>Technical skill</li>
+                <li>Engineering method</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Tools</h3>
+              <ul class="plain-list">
+                <li>Engineering tool</li>
+                <li>Development tool</li>
+                <li>Platform</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Strengths</h3>
+              <ul class="plain-list">
+                <li>Problem solving</li>
+                <li>Communication</li>
+                <li>Collaboration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education" aria-labelledby="education-title">
+        <div class="container section-grid">
+          <div>
+            <p class="eyebrow">Education</p>
+            <h2 id="education-title">What I’ve studied</h2>
+          </div>
+          <!-- CUSTOMIZE: EDUCATION -->
+          <div class="education-list">
+            <article class="education-card">
+              <p class="education-card__date">Graduation Date</p>
+              <h3>Degree and Major</h3>
+              <p class="organization">School</p>
+              <p>Add relevant coursework, research, focus areas, or honors when useful.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="container contact__content">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Interested in working together?</h2>
+          </div>
+          <!-- CUSTOMIZE: CONTACT OPTIONS -->
+          <div>
+            <p>
+              Approved email, LinkedIn, GitHub, contact-form, or WhatsApp options
+              appear here after personalization.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__content">
+        <p>&copy; <span id="current-year">2026</span> Your Name</p>
+        <p>Built with HTML, CSS, and JavaScript.</p>
+      </div>
+    </footer>
+  </body>
+</html>

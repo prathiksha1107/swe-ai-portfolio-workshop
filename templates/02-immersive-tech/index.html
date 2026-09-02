@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A technology-focused engineering portfolio featuring selected experience and projects.">
+    <meta name="theme-color" content="#07111f">
+    <title>Alex Morgan | Technology Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- ANALYTICS: Microsoft Clarity tracking code can be added here -->
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <canvas class="atmosphere" id="atmosphere" aria-hidden="true"></canvas>
+    <div class="ambient ambient--one" aria-hidden="true"></div>
+    <div class="ambient ambient--two" aria-hidden="true"></div>
+    <div class="background-emblem" aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+      <nav class="navigation container" aria-label="Main navigation">
+        <!-- CUSTOMIZE: NAME -->
+        <a class="logo" href="#top" aria-label="Alex Morgan, home">
+          <span aria-hidden="true">AM</span>
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation-links">
+          <span>Menu</span>
+          <span class="menu-button__lines" aria-hidden="true"></span>
+        </button>
+        <ul class="navigation__links" id="navigation-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero__grid container">
+          <div class="hero__content reveal">
+            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Open to engineering opportunities</p>
+            <!-- CUSTOMIZE: NAME -->
+            <h1 id="hero-title">Alex<br><span>Morgan</span></h1>
+            <!-- CUSTOMIZE: TITLE -->
+            <p class="hero__role">Software &amp; Robotics Engineer</p>
+            <p class="hero__statement">I build dependable systems that connect software, sensors, and real-world decisions.</p>
+            <!-- CUSTOMIZE: CONTACT -->
+            <div class="button-group">
+              <a class="button button--primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+              <span class="button button--secondary button--disabled" aria-disabled="true">Resume not added</span>
+              <a class="button button--quiet" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="button button--quiet" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true" data-parallax>
+            <canvas class="orbit-canvas" id="orbit-scene"></canvas>
+            <div class="orbit-fallback">
+              <span></span>
+              <p>Interactive systems visualization</p>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-cue" aria-hidden="true"><span></span>Scroll to explore</div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="section-object object-cube" aria-hidden="true">
+          <span class="face face--front"></span><span class="face face--back"></span>
+          <span class="face face--left"></span><span class="face face--right"></span>
+          <span class="face face--top"></span><span class="face face--bottom"></span>
+        </div>
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-index">01 / About</p>
+            <h2 id="about-title">Engineering ideas into <span>useful systems.</span></h2>
+          </div>
+          <!-- CUSTOMIZE: ABOUT -->
+          <div class="about__grid">
+            <div class="about__copy reveal">
+              <p>I am an engineering student interested in the boundary between software and the physical world. I enjoy turning ambiguous problems into testable, maintainable solutions.</p>
+              <p>My work spans embedded prototypes, data tools, and collaborative product development—with curiosity and careful iteration at the center.</p>
+            </div>
+            <div class="focus-grid reveal" aria-label="Professional focus areas">
+              <article><span>01</span><h3>Software</h3><p>Clear, maintainable applications</p></article>
+              <article><span>02</span><h3>Robotics</h3><p>Sensing and autonomous systems</p></article>
+              <article><span>03</span><h3>Data</h3><p>Evidence-led technical decisions</p></article>
+              <article><span>04</span><h3>Product</h3><p>Useful outcomes for real people</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience" aria-labelledby="experience-title">
+        <div class="section-object object-helix" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-index">02 / Experience</p>
+            <h2 id="experience-title">Learning by <span>building.</span></h2>
+          </div>
+          <!-- CUSTOMIZE: EXPERIENCE -->
+          <div class="timeline">
+            <div class="timeline__track" aria-hidden="true"><span></span></div>
+            <article class="timeline-card reveal">
+              <div class="timeline-card__marker" aria-hidden="true"></div>
+              <div class="timeline-card__meta"><time>2025–Present</time><span>Current</span></div>
+              <div class="timeline-card__body">
+                <h3>Engineering Lab Assistant</h3>
+                <p class="organization">North River University</p>
+                <p>Support electronics labs by preparing test equipment, helping students follow safety procedures, and improving equipment checkout organization.</p>
+                <ul class="chip-list" aria-label="Technologies used"><li>Lab instrumentation</li><li>Electronics testing</li><li>Documentation</li></ul>
+              </div>
+            </article>
+            <article class="timeline-card reveal">
+              <div class="timeline-card__marker" aria-hidden="true"></div>
+              <div class="timeline-card__meta"><time>Summer 2024</time></div>
+              <div class="timeline-card__body">
+                <h3>Software Engineering Intern</h3>
+                <p class="organization">Cedar Robotics Lab</p>
+                <p>Built internal sensor-data tools and collaborated with researchers to make prototype testing more repeatable.</p>
+                <ul class="chip-list" aria-label="Technologies used"><li>Python</li><li>Sensor data</li><li>Git</li></ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects" aria-labelledby="projects-title">
+        <div class="section-object object-prism" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-index">03 / Selected work</p>
+            <h2 id="projects-title">Projects with <span>purpose.</span></h2>
+          </div>
+          <!-- CUSTOMIZE: PROJECT -->
+          <div class="project-stack">
+            <article class="project-card reveal" data-tilt>
+              <div class="project-card__topline"><span>01</span><span>Embedded systems</span></div>
+              <div class="project-card__layout">
+                <div>
+                  <h3>Autonomous Greenhouse Monitor</h3>
+                  <p class="project-card__summary">A sensor-based prototype for tracking growing conditions and making status changes visible.</p>
+                </div>
+                <dl class="project-details">
+                  <div><dt>Problem</dt><dd>Small greenhouse experiments needed consistent environmental observations.</dd></div>
+                  <div><dt>Approach</dt><dd>Integrated temperature and moisture sensors, wrote control logic, and tested alert thresholds.</dd></div>
+                  <div><dt>Impact</dt><dd>Produced a working prototype and documented the design for future iteration.</dd></div>
+                </dl>
+              </div>
+              <div class="project-card__footer">
+                <ul class="chip-list" aria-label="Technologies used"><li>C++</li><li>Arduino</li><li>Sensors</li></ul>
+                <div class="project-links"><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://example.com/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a></div>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-tilt>
+              <div class="project-card__topline"><span>02</span><span>Data tooling</span></div>
+              <div class="project-card__layout">
+                <div>
+                  <h3>Lab Signal Explorer</h3>
+                  <p class="project-card__summary">A lightweight interface for reviewing experimental sensor readings.</p>
+                </div>
+                <dl class="project-details">
+                  <div><dt>Problem</dt><dd>Reviewing raw test files made it difficult to compare repeated experiments.</dd></div>
+                  <div><dt>Approach</dt><dd>Parsed structured files and created focused views for inspecting changes over time.</dd></div>
+                  <div><dt>Impact</dt><dd>Made recurring test review easier for the student project team.</dd></div>
+                </dl>
+              </div>
+              <div class="project-card__footer">
+                <ul class="chip-list" aria-label="Technologies used"><li>Python</li><li>JavaScript</li><li>Data visualization</li></ul>
+                <div class="project-links"><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- OPTIONAL: Remove this section when PROFILE.md has no verified metrics. -->
+      <section class="impact" aria-labelledby="impact-title">
+        <div class="container impact__grid reveal">
+          <div><p class="section-index">04 / Impact</p><h2 id="impact-title">Measured outcomes.</h2></div>
+          <dl class="metric-grid">
+            <div><dt data-count="12" data-suffix="+">12+</dt><dd>Prototype tests completed</dd></div>
+            <div><dt data-count="3">3</dt><dd>Team tools delivered</dd></div>
+            <div><dt data-count="2">2</dt><dd>Technical teams supported</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills" aria-labelledby="skills-title">
+        <div class="section-object object-nucleus" aria-hidden="true">
+          <span></span><i></i><i></i><i></i>
+        </div>
+        <div class="container">
+          <div class="section-heading reveal"><p class="section-index">05 / Skills</p><h2 id="skills-title">My technical <span>toolkit.</span></h2></div>
+          <!-- CUSTOMIZE: SKILLS -->
+          <div class="skills-grid reveal">
+            <article><p>01</p><h3>Languages</h3><ul><li>C++</li><li>Python</li><li>JavaScript</li></ul></article>
+            <article><p>02</p><h3>Engineering</h3><ul><li>Circuit testing</li><li>Sensor integration</li><li>Prototyping</li></ul></article>
+            <article><p>03</p><h3>Tools</h3><ul><li>Git</li><li>Arduino</li><li>Lab instrumentation</li></ul></article>
+            <article><p>04</p><h3>Methods</h3><ul><li>Technical documentation</li><li>Iterative testing</li><li>Team collaboration</li></ul></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education" id="education" aria-labelledby="education-title">
+        <div class="section-object object-lattice" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="container education__grid reveal">
+          <div class="section-heading"><p class="section-index">06 / Education</p><h2 id="education-title">Foundation for <span>what’s next.</span></h2></div>
+          <!-- CUSTOMIZE: EDUCATION -->
+          <article class="education-card">
+            <div><p class="education-card__date">Expected May 2027</p><h3>Bachelor of Science in Electrical Engineering</h3><p class="organization">North River University</p></div>
+            <p>Focus areas: embedded systems, controls, and software fundamentals.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="section-object object-portal" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="container contact__grid reveal">
+          <div>
+            <p class="section-index">07 / Contact</p>
+            <!-- CUSTOMIZE: CONTACT -->
+            <h2 id="contact-title">Let’s build something <span>thoughtful.</span></h2>
+            <p>Interested in an engineering collaboration, internship, or technical conversation? I’d be glad to connect.</p>
+          </div>
+          <div class="contact__actions">
+            <a class="contact-link" href="mailto:alex.morgan@example.com"><span>Email</span><strong>alex.morgan@example.com</strong><i aria-hidden="true">↗</i></a>
+            <a class="contact-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><span>Network</span><strong>LinkedIn</strong><i aria-hidden="true">↗</i></a>
+            <a class="contact-link" href="https://github.com/" target="_blank" rel="noopener noreferrer"><span>Code</span><strong>GitHub</strong><i aria-hidden="true">↗</i></a>
+            <p class="contact__location">Based in Cedar Falls, Iowa</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__content">
+        <p>© <span id="current-year">2026</span> Alex Morgan</p>
+        <div><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
