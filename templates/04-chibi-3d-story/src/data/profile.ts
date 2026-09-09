@@ -1,5 +1,3 @@
-export type LinkPair = { label: string; url: string };
-
 export type Experience = {
   company: string;
   role: string;
@@ -21,100 +19,76 @@ export type Project = {
   imageUrl?: string;
 };
 
-// CUSTOMIZE: This is the only file participants normally need the AI to edit.
+// CUSTOMIZE WITH AI: After PROFILE.md is human-approved, Skill 02 replaces only
+// the placeholder content in this file. Blank optional links stay hidden.
 export const profile = {
-  name: "Prathiksha Ravi Krishnan",
-  initials: "PRK",
-  title: "Senior Software & Applied AI Engineer",
-  tagline: "AI Platforms · Automation · Manufacturing Systems",
-  positioning: "I build practical software and AI systems that solve real operational problems at scale.",
-  introduction:
-    "More than seven years of experience across semiconductor manufacturing, enterprise systems, applied AI research, and entrepreneurship.",
-  location: "Boise, Idaho",
-  email: "prathik@iastate.edu",
+  name: "Your Name",
+  initials: "YN",
+  title: "Your Professional Title",
+  tagline: "YOUR FOCUS · YOUR SPECIALTY · YOUR INDUSTRY",
+  positioning: "Write a short sentence explaining what you build and who it helps.",
+  introduction: "Add two or three sentences that introduce your engineering experience and interests.",
+  location: "",
+  email: "",
+  contactFormEndpoint: "",
   resumeUrl: "",
   links: {
-    github: "https://github.com/prathiksha1107",
-    linkedin: "https://www.linkedin.com/in/prathiksha-ravi-krishnan",
+    github: "",
+    linkedin: "",
   },
   about: [
-    "I design software that connects ambitious technical ideas to useful operational outcomes. My work spans cloud applications, AI-enabled systems, automation, and high-volume data workflows.",
-    "At Micron, I focus on AI and Azure adoption, engineering-platform modernization, fab efficiency, and reusable infrastructure for production teams.",
+    "Describe the kinds of technical problems you enjoy solving and the perspective you bring to engineering work.",
+    "Add a second short paragraph about your current focus, collaboration style, or the outcomes you want to create.",
   ],
   experience: [
     {
-      company: "Micron Technology",
-      role: "Senior Operations Improvement Engineer",
-      dates: "2024—Present",
-      summary: "Building and supporting production applications while advancing AI, Azure, engineering-platform modernization, and fab workflow observability.",
-      impact: "Improved a critical workflow by more than 70% while processing over 10 million records; received Innovation and Idea of the Quarter recognition.",
-      technologies: ["Python", "Azure AI Foundry", "SQL Server", "SSIS", "AI agents", "Tableau", "Power BI", "Angular"],
+      company: "Company or Organization",
+      role: "Role Title",
+      dates: "Start — End",
+      summary: "Briefly explain what you worked on and the problem you helped solve.",
+      impact: "Describe a verified outcome. Remove this sentence when no public outcome is available.",
+      technologies: ["Technology", "Tool", "Platform"],
     },
     {
-      company: "Iowa State University",
-      role: "Graduate Research Assistant",
-      dates: "Aug 2022—May 2024",
-      summary: "Developed an AI-enabled application designed to simplify organic-certification navigation for farmers.",
-      impact: "Contributed prompt engineering, architecture, UI/UX, full-stack implementation, Scrum planning, and development coordination.",
-      technologies: ["Angular", "Python", "Flask", "Azure Functions", "MySQL"],
-    },
-    {
-      company: "Pop It Out",
-      role: "Co-Founder & Technology Lead",
-      dates: "Jul 2019—Aug 2022",
-      summary: "Led technology and product decisions for e-commerce, order management, UI/UX, operations, and workflow automation.",
-      impact: "Built a cloud order-management platform and helped scale the business from approximately $500 to $375K within one year.",
-      technologies: ["Angular", "Node.js", "Shopify", "Azure Functions", "MySQL"],
-    },
-    {
-      company: "Infosys · Toyota Motor North America",
-      role: "Senior Systems Engineer / Full-Stack Developer",
-      dates: "Jul 2018—Aug 2020",
-      summary: "Designed and deployed cloud-based enterprise HR applications that modernized manual workflows.",
-      impact: "Reduced latency by approximately 40%, improved database-administration efficiency by approximately 20%, and helped accelerate an initiative by approximately 12 months.",
-      technologies: ["Angular", "Node.js", "Azure", "AWS", "MongoDB", "REST APIs"],
+      company: "Previous Company or Organization",
+      role: "Role Title",
+      dates: "Start — End",
+      summary: "Add another concise experience summary using only approved profile facts.",
+      impact: "Describe the result without inventing numbers or confidential details.",
+      technologies: ["Technology", "Tool"],
     },
   ] satisfies Experience[],
   projects: [
     {
-      title: "Enterprise AI Support Platform",
-      summary: "Reusable AI support infrastructure with application-specific agents and skills.",
-      problem: "Engineering teams need faster help when internal applications behave unexpectedly.",
-      approach: "Architected specialized agents connected to application interfaces, services, and operational data.",
-      impact: "Established reusable infrastructure for application support within a broader team AI ecosystem.",
-      technologies: ["Azure AI Foundry", "AI agents", "Agent skills", "Operational data"],
+      title: "Featured Project Title",
+      summary: "Summarize the project in one clear sentence.",
+      problem: "What useful problem did this project address?",
+      approach: "What did you personally design, build, test, or improve?",
+      impact: "What verified result or learning came from the work?",
+      technologies: ["Technology", "Tool", "Platform"],
     },
     {
-      title: "High-Volume Manufacturing Workflow Optimization",
-      summary: "A mission-critical manufacturing data workflow processing more than 10 million records.",
-      problem: "A high-volume workflow required better performance, scalability, and maintainability.",
-      approach: "Optimized SSIS workflows, stored procedures, SQL queries, loading, and indexes with Python parallel processing.",
-      impact: "Improved critical job performance by more than 70%.",
-      technologies: ["Python", "Parallel processing", "SSIS", "SQL Server", "T-SQL"],
-    },
-    {
-      title: "AI-Enabled Organic Certification Application",
-      summary: "A user-facing application intended to simplify certification navigation for farmers.",
-      problem: "Organic farmers face a complex and costly certification process.",
-      approach: "Combined prompt engineering, AI integration, architecture, UI/UX, and full-stack development.",
-      impact: "Produced an AI-enabled application designed to make certification guidance easier to navigate.",
-      technologies: ["Angular", "Python", "Flask", "Azure Functions", "MySQL"],
+      title: "Second Project Title",
+      summary: "Add a second approved project or remove this placeholder.",
+      problem: "Explain the problem.",
+      approach: "Explain your approach.",
+      impact: "Explain the verified outcome.",
+      technologies: ["Technology", "Tool"],
     },
   ] as Project[],
   skills: [
-    { label: "Applied AI", items: ["AI agents", "Prompt engineering", "Azure AI Foundry", "MCP"] },
-    { label: "Software", items: ["Python", "TypeScript", "JavaScript", "Angular", "Node.js", "C#"] },
-    { label: "Cloud & Data", items: ["Azure", "AWS", "SQL Server", "MySQL", "MongoDB", "SSIS"] },
-    { label: "Engineering", items: ["Architecture", "REST APIs", "Observability", "Agile", "Technical mentorship"] },
+    { label: "Programming", items: ["Language", "Framework", "Testing"] },
+    { label: "Cloud & Data", items: ["Cloud platform", "Database", "Data tool"] },
+    { label: "Engineering", items: ["Architecture", "APIs", "Collaboration"] },
+    { label: "Specialty", items: ["Your specialty", "Your method", "Your domain"] },
   ],
   education: [
-    { degree: "Master of Science in Computer Engineering", school: "Iowa State University", date: "May 2024", detail: "Applied AI and software engineering research · Full scholarship / graduate funding" },
-    { degree: "Bachelor of Engineering in Information Technology", school: "St. Joseph's College of Engineering, Anna University", date: "2018", detail: "" },
+    {
+      degree: "Degree and Major",
+      school: "School or University",
+      date: "Graduation Date",
+      detail: "Optional approved coursework, research focus, or distinction",
+    },
   ],
-  achievements: [
-    "Innovation Award · Micron Technology",
-    "Idea of the Quarter Cash Award · Micron Technology",
-    "Insta Awards · Infosys, 2019 and 2020",
-    "Star Performer · Infosys, 2019",
-  ],
+  achievements: [] as string[],
 };

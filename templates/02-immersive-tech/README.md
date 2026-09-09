@@ -56,6 +56,11 @@ when that file exists and you approve it for public download.
 This folder can be hosted free with GitHub Pages because it is a static website and
 uses relative paths. Run portfolio QA before publishing.
 
+After the public URL works, participants may optionally follow the
+[free analytics guide](../../guides/04-add-free-analytics.md) to create and install
+their own Microsoft Clarity project. The reusable starter intentionally contains no
+tracking ID.
+
 ## Performance note
 
 This template has more effects than Minimal Professional. Avoid large media files or

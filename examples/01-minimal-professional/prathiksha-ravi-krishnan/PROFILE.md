@@ -13,7 +13,7 @@ Professional Title: Senior Software & Applied AI Engineer
 
 Short Tagline: AI Platforms · Automation · Manufacturing Systems
 
-Email: prathik@iastate.edu
+Email: prathiksha11@yahoo.com
 
 LinkedIn URL:
 
@@ -261,7 +261,7 @@ Personal interests:
 
 ## Contact Preferences
 
-Public Email: prathik@iastate.edu
+Public Email: prathiksha11@yahoo.com
 
 LinkedIn URL: https://www.linkedin.com/in/prathiksha-ravi-krishnan
 
@@ -290,4 +290,3 @@ website.
 Status: APPROVED FOR PORTFOLIO GENERATION
 
 Reviewed by: Prathiksha Ravi Krishnan
-

@@ -1,8 +1,8 @@
 # Chibi 3D Story
 
-Status: Experimental  
-Template ID: `04-chibi-3d-story`  
-Workshop Ready: Testing
+Status: Stable
+Template ID: `04-chibi-3d-story`
+Workshop Ready: Yes
 
 ## What this template is
 
@@ -15,6 +15,15 @@ available.
 Participants do not need to know React or Three.js. They work with their resume,
 `PROFILE.md`, an AI assistant, and GitHub. The technical complexity stays inside the
 template.
+
+## Before the workshop
+
+Install the current LTS version of Node.js and create a free GitHub account. Then
+download or clone this repository. The facilitator should verify that `npm install`
+works on the event network before participants begin.
+
+Each participant should work in a copy of this folder. They should not edit the
+shared starter or another participant's generated portfolio.
 
 ## Technology
 
@@ -35,9 +44,12 @@ There is no backend, database, authentication, paid API, or runtime secret.
 - `PROFILE.md`: the human-reviewed content contract used by the workshop skills.
 - `src/data/profile.ts`: the centralized public content generated from an approved
   profile. Participants should not edit the 3D files.
-- `public/models/chibi.glb`: the final character model.
+- `public/models/chibi.glb`: the participant's optional approved character model.
 - `public/assets/resume.pdf`: the optional approved public resume.
 - `index.html`: page metadata and the documented Microsoft Clarity insertion point.
+
+Every personal link is optional. Blank GitHub, LinkedIn, resume, email, and form
+values are omitted instead of becoming broken controls.
 
 ## Add the character
 
@@ -49,6 +61,14 @@ public/models/chibi.glb
 
 Do not rename it. If it is missing, the page shows a tasteful abstract development
 character and continues working.
+
+After adding the model, uncomment the marked `MODEL` preload line in `index.html`
+so the browser can begin downloading it before the React application starts.
+
+Use only a model the participant created, licensed, or has permission to publish.
+Do not copy the demonstration character into another person's public portfolio
+without permission. Keep the GLB under 5 MB when practical; under 2 MB is preferable
+for mobile visitors.
 
 Preferred animation clip names:
 
@@ -97,6 +117,13 @@ npm run dev
 
 Open the local address Vite prints. Stop the server with `Ctrl+C`.
 
+On Windows PowerShell, use `npm.cmd` if the local script policy blocks `npm.ps1`:
+
+```powershell
+npm.cmd install
+npm.cmd run dev
+```
+
 ## Build and preview
 
 ```bash
@@ -130,8 +157,9 @@ Use the same workshop sequence as the other templates:
 Review → Skill 03**
 
 Skill 02 should update `src/data/profile.ts`, remove missing links, and preserve the
-3D architecture. The current content demonstrates the template using approved
-portfolio facts; `PROFILE.md` remains an unapproved reusable starter schema.
+3D architecture. The starter displays clearly labeled prompts until Skill 02
+replaces them from the approved profile. A completed personalized example is under
+`examples/04-chibi-3d-story/prathiksha-ravi-krishnan/`.
 
 ## Resume and analytics
 
@@ -139,8 +167,23 @@ The Resume control is hidden while `resumeUrl` is blank. To enable it, place an
 approved file at `public/assets/resume.pdf` and set `resumeUrl` to
 `"./assets/resume.pdf"` in the profile data.
 
-The Microsoft Clarity insertion point is documented in `index.html`. Add only a real
-project script after the participant approves analytics. Never add a fake project ID.
+The Microsoft Clarity insertion point is documented in `index.html`. Add only the
+participant's own real project script after they approve analytics. Follow the
+[free analytics guide](../../guides/04-add-free-analytics.md); never copy an ID from
+an example site.
+
+## Workshop completion checklist
+
+- `PROFILE.md` contains the exact human-approval marker before generation.
+- `src/data/profile.ts` contains only approved public facts.
+- Missing links and contact methods do not appear.
+- The participant owns or can publish `public/models/chibi.glb`.
+- The site works at desktop, tablet, and mobile widths.
+- Keyboard focus remains visible and the menu works with Enter, Space, and Escape.
+- Reduced-motion mode keeps all text available and stops decorative movement.
+- `npm run typecheck` and `npm run build` pass.
+- Skill 03 QA passes before deployment.
+- Analytics is added only after deployment with the participant's own project ID.
 
 ## Troubleshooting
 

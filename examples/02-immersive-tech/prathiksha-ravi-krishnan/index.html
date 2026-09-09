@@ -64,10 +64,13 @@
           </div>
 
           <div class="hero-visual" aria-hidden="true" data-parallax>
-            <canvas class="orbit-canvas" id="orbit-scene"></canvas>
-            <div class="orbit-fallback">
-              <span></span>
-              <p>Interactive systems visualization</p>
+            <div class="systems-map">
+              <div class="systems-map__rail systems-map__rail--one"><i></i><i></i><i></i></div>
+              <div class="systems-map__rail systems-map__rail--two"><i></i><i></i></div>
+              <span class="systems-map__node systems-map__node--input">Data</span>
+              <span class="systems-map__node systems-map__node--core">AI +<br>Software</span>
+              <span class="systems-map__node systems-map__node--output">Impact</span>
+              <p>Systems engineered from signal to outcome</p>
             </div>
           </div>
         </div>
@@ -284,7 +287,16 @@
             <p>Interested in practical AI systems, cloud software, or engineering-platform work? I’d be glad to connect.</p>
           </div>
           <div class="contact__actions">
-            <a class="contact-link" href="mailto:prathik@iastate.edu"><span>Email</span><strong>prathik@iastate.edu</strong><i aria-hidden="true">↗</i></a>
+            <form class="contact-form" action="https://formspree.io/f/mppzlqqj" method="POST" data-contact-form>
+              <label for="immersive-name">Name<input id="immersive-name" name="name" type="text" autocomplete="name" required></label>
+              <label for="immersive-email">Email<input id="immersive-email" name="email" type="email" autocomplete="email" spellcheck="false" required></label>
+              <label for="immersive-message">Message<textarea id="immersive-message" name="message" required></textarea></label>
+              <label class="form-honeypot" aria-hidden="true">Leave this field empty<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label>
+              <input name="_subject" type="hidden" value="Portfolio inquiry">
+              <button type="submit">Send message <span aria-hidden="true">↗</span></button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+            <a class="contact-link" href="mailto:prathiksha11@yahoo.com"><span>Email</span><strong>prathiksha11@yahoo.com</strong><i aria-hidden="true">↗</i></a>
             <a class="contact-link" href="https://www.linkedin.com/in/prathiksha-ravi-krishnan" target="_blank" rel="noopener noreferrer"><span>Network</span><strong>LinkedIn</strong><i aria-hidden="true">↗</i></a>
             <a class="contact-link" href="https://github.com/prathiksha1107" target="_blank" rel="noopener noreferrer"><span>Code</span><strong>GitHub</strong><i aria-hidden="true">↗</i></a>
             <p class="contact__location">Based in Boise, Idaho</p>

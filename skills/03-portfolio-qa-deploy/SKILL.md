@@ -113,6 +113,33 @@ Contact configuration blocks deployment only when it creates a broken control,
 exposes an unapproved phone number, or places a secret/private credential in public
 code. Missing intentionally disabled optional contact features do not block.
 
+### Optional analytics gate
+
+Analytics is optional and should normally be configured only after the participant
+has a working public URL. If analytics is absent, report it as an optional next step,
+not a QA failure.
+
+When Microsoft Clarity or another analytics service is present:
+
+- confirm the participant explicitly approved analytics and owns the project;
+- verify the tracking ID is real and is not copied from a workshop example;
+- treat a public Clarity project ID as configuration, not a secret, but never expose
+  account credentials, API keys, access tokens, or dashboard-sharing links;
+- verify the tracking script uses the provider's HTTPS endpoint, loads asynchronously,
+  appears once per public page, and does not use a malformed Markdown URL;
+- check that the configured project URL matches the final public site;
+- report that analytics identifies aggregate behavior and approximate location, not
+  a visitor's real-world identity;
+- require the participant to consider applicable cookie-consent and privacy-notice
+  rules before enabling tracking, especially for consent-required regions;
+- do not enable behavioral analytics on a site directed to children or an audience
+  prohibited by the provider's current terms;
+- after deployment, verify the live page contains the expected tracking ID and that
+  the provider script loads successfully without claiming dashboard data is present.
+
+Use `../../guides/04-add-free-analytics.md` as the participant-facing workshop
+procedure.
+
 ### QA report and mandatory stop
 
 After checks and safe fixes, provide:

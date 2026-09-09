@@ -22,6 +22,7 @@ portfolio content or change `PROFILE.md`.
 - Secrets and privacy risks
 - Existing builds, tests, linting, or lightweight static validation
 - GitHub Pages readiness for static sites
+- Optional analytics configuration, ownership, consent, and privacy disclosure
 
 ## Safety
 
@@ -31,6 +32,11 @@ and asks whether you want to deploy.
 Deployment requires a separate, explicit approval in a new message. A potential
 secret or confidential file blocks deployment. Missing repository, authentication,
 branch, or hosting information is reported rather than invented.
+
+After deployment, analytics remains optional. Use the
+[free analytics guide](../../guides/04-add-free-analytics.md) to create a
+participant-owned Clarity project, add its tracking code, and rerun this skill before
+publishing that change.
 
 ## Example usage
 

@@ -351,8 +351,17 @@
               I’m based in Boise, Idaho, and interested in senior software,
               applied AI, AI platform, and full-stack engineering opportunities.
             </p>
+            <form class="contact-form" action="https://formspree.io/f/mppzlqqj" method="POST" data-contact-form>
+              <label for="contact-name">Name<input id="contact-name" name="name" type="text" autocomplete="name" required></label>
+              <label for="contact-email">Email<input id="contact-email" name="email" type="email" autocomplete="email" spellcheck="false" required></label>
+              <label for="contact-message">Message<textarea id="contact-message" name="message" required></textarea></label>
+              <label class="form-honeypot" aria-hidden="true">Leave this field empty<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label>
+              <input name="_subject" type="hidden" value="Portfolio inquiry">
+              <button class="button button--primary" type="submit">Send message</button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
             <div class="button-group" aria-label="Contact options">
-              <a class="button button--primary" href="mailto:prathik@iastate.edu">
+              <a class="button button--primary" href="mailto:prathiksha11@yahoo.com">
                 Send email
               </a>
               <a

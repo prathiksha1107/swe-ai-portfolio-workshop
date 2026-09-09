@@ -22,6 +22,9 @@ Review → Skill 03**
 4. Visually review the generated portfolio.
 5. Use `skills/03-portfolio-qa-deploy/SKILL.md` for QA. Deployment always requires a
    later, explicit approval.
+6. After the site is live, optionally follow the
+   [free analytics guide](../../guides/04-add-free-analytics.md) to add a
+   participant-owned Microsoft Clarity project.
 
 ## Files participants normally interact with
 
@@ -69,3 +72,11 @@ include or link to anyone else's resume.
 Personalized examples are preserved under `examples/01-minimal-professional/`. They
 reuse this template's final CSS and JavaScript while keeping personal information
 outside the starter.
+
+## Optional visitor analytics
+
+The starter intentionally contains no tracking ID. After deployment, participants
+may create their own free Microsoft Clarity project and ask an AI assistant to add
+the supplied tracking code at the marked `ANALYTICS` location in `index.html`.
+Follow the [free analytics guide](../../guides/04-add-free-analytics.md). Never copy
+an ID from an example site.

@@ -30,12 +30,27 @@ html {
 
 body {
   margin: 0;
+  overflow-x: clip;
   color: var(--color-ink);
   background: var(--color-surface);
   font-family: var(--font-sans);
   font-size: 1rem;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Signature detail: quiet drafting marks give the page an engineering-document rhythm. */
+main { counter-reset: portfolio-section; }
+.section { position: relative; counter-increment: portfolio-section; }
+.section:not(.contact)::before { position: absolute; top: 2rem; left: max(1rem, calc((100vw - var(--content-width)) / 2 - 3rem)); color: var(--color-muted); content: "0" counter(portfolio-section); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.14em; opacity: 0.48; }
+.section:not(.contact)::after { position: absolute; top: 2.45rem; left: 0; width: max(0px, calc((100vw - var(--content-width)) / 2 - 4rem)); height: 1px; background: var(--color-line); content: ""; }
+
+.hero__content,
+.section-grid > *,
+.timeline-item > *,
+.project-card,
+.contact__content > * {
+  min-width: 0;
 }
 
 button,
@@ -542,6 +557,11 @@ h3 {
   cursor: pointer;
 }
 
+.contact-form .button:disabled { cursor: wait; opacity: 0.72; }
+.form-honeypot { position: absolute; left: -9999px; }
+.form-status { min-height: 1.5em; margin: 0; font-weight: 700; }
+.form-status[data-state="error"] { color: #ffd0d0; }
+
 .site-footer {
   padding-block: 1.75rem;
   color: var(--color-muted);
@@ -624,6 +644,29 @@ h3 {
   }
 }
 
+@media (max-width: 78rem) { .section:not(.contact)::before, .section:not(.contact)::after { display: none; } }
+
+@media (min-width: 48.01rem) and (max-width: 64rem) {
+  .container {
+    width: min(calc(100% - 3rem), var(--content-width));
+  }
+
+  .section-grid,
+  .contact__content {
+    grid-template-columns: minmax(11rem, 0.55fr) minmax(0, 1.45fr);
+    gap: clamp(2rem, 5vw, 4rem);
+  }
+
+  .timeline-item {
+    grid-template-columns: minmax(10rem, 0.5fr) minmax(0, 1.5fr);
+    gap: 2rem;
+  }
+
+  .skill-groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 30rem) {
   .container {
     width: min(calc(100% - 2rem), var(--content-width));
@@ -635,6 +678,15 @@ h3 {
 
   .hero__content::after {
     display: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  li,
+  a {
+    overflow-wrap: anywhere;
   }
 }
 
