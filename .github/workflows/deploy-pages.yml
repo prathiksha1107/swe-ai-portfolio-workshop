@@ -43,7 +43,8 @@ jobs:
           cp examples/02-immersive-tech/prathiksha-ravi-krishnan/style.css _site/immersive-tech/style.css
           cp examples/02-immersive-tech/prathiksha-ravi-krishnan/script.js _site/immersive-tech/script.js
           cp -R examples/02-immersive-tech/prathiksha-ravi-krishnan/assets _site/immersive-tech/assets
-          cp -R examples/04-chibi-3d-story/prathiksha-ravi-krishnan/dist/. _site/chibi-3d-story/touch _site/.nojekyll
+          cp -R examples/04-chibi-3d-story/prathiksha-ravi-krishnan/dist/. _site/chibi-3d-story/
+          touch _site/.nojekyll
       - uses: actions/configure-pages@v5
         with:
           enablement: true
