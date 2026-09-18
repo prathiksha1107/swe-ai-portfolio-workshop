@@ -23,11 +23,11 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: templates/04-chibi-3d-story/package-lock.json
+          cache-dependency-path: examples/04-chibi-3d-story/prathiksha-ravi-krishnan/package-lock.json
       - name: Build Chibi 3D Story
-        working-directory: templates/04-chibi-3d-story
+        working-directory: examples/04-chibi-3d-story/prathiksha-ravi-krishnan
         run: npm ci && npm run build
-      - name: Assemble public sites
+      - name: Assemble public sitesi
         shell: bash
         run: |
           set -euo pipefail
@@ -43,8 +43,7 @@ jobs:
           cp examples/02-immersive-tech/prathiksha-ravi-krishnan/style.css _site/immersive-tech/style.css
           cp examples/02-immersive-tech/prathiksha-ravi-krishnan/script.js _site/immersive-tech/script.js
           cp -R examples/02-immersive-tech/prathiksha-ravi-krishnan/assets _site/immersive-tech/assets
-          cp -R templates/04-chibi-3d-story/dist/. _site/chibi-3d-story/
-          touch _site/.nojekyll
+          cp -R examples/04-chibi-3d-story/prathiksha-ravi-krishnan/dist/. _site/chibi-3d-story/touch _site/.nojekyll
       - uses: actions/configure-pages@v5
         with:
           enablement: true
